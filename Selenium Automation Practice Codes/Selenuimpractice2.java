@@ -17,6 +17,7 @@ public class AlertHandle {
 	private static WebDriver driver;
 
 	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\madhu\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		String baselink = "https://omayo.blogspot.com/";
