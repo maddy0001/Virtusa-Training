@@ -17,7 +17,7 @@ RIGHT JOIN Purchaser ON Orders.CustomerID = Purchaser.CustomerID
 ORDER BY Flipkart.OrderId;
 
 
----FULL JOIN--
+--FULL JOIN--
 
 SELECT Purchaser.PurchaserName, Flipkart.OrderId
 FROM Purchaser
@@ -25,14 +25,14 @@ FULL OUTER JOIN Flipkart ON Purchaser.CustomerID=Flipkart.CustomerID
 ORDER BY Purchaser.PurchaserName;
 
 
----INNER JOIN----
+--INNER JOIN--
 
 SELECT Flipkart.OrderId, Purchaser.PurchaserName
 FROM Flipkart
 INNER JOIN Purchaser ON Flipkart.CustomerID = Purchaser.CustomerID;
 
 
---GROUP BY----
+--GROUP BY--
 
 SELECT COUNT(CustomerID), Country
 FROM Purchaser
@@ -40,7 +40,7 @@ GROUP BY Country
 ORDER BY COUNT(CustomerID) DESC;
 
 
------UNION-----
+--UNION--
 
 SELECT FirstName FROM Purchaser
 UNION
