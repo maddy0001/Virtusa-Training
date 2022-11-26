@@ -1,17 +1,25 @@
 public class ExceptionHandling_Finally {
-
-    public static void main(String[] args) {
-
-        try {
-            int a[] = new int[5];
-            a[5] = 30 / 0;
-        } catch (ArithmeticException e) {
-            System.out.println("Arithmetic Exception occurs");
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("ArrayIndexOutOfBounds Exception occurs");
-        } catch (Exception e) {
-            System.out.println("Parent Exception occurs");
-        }
-        System.out.println("rest of the code");
-    }
-}
+       public static void main(String args[]){   
+  
+      try {    
+  
+        System.out.println("Inside the try block");  
+          
+        //below code throws divide by zero exception  
+       int data=25/0;    
+       System.out.println(data);    
+      }    
+      //cannot handle Arithmetic type exception  
+      //can only accept Null Pointer type exception  
+      catch(NullPointerException e){  
+        System.out.println(e);  
+      }   
+  
+      //executes regardless of exception occured or not   
+      finally {  
+        System.out.println("finally block is always executed");  
+      }    
+  
+      System.out.println("Rest of the code...");    
+      }    
+    }    
