@@ -23,7 +23,7 @@ class AXIS extends Bank {
     }
 }
 
-class Method_Overloading {
+class Method_Overriding {
     public static void main(String args[]) {
         SBI s = new SBI();
         ICICI i = new ICICI();
