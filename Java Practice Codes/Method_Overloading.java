@@ -10,7 +10,7 @@ class Method_overloading {
 
 class TestOverloading1 {
     public static void main(String[] args) {
-        System.out.println(Method_overloading.add(11, 11));
-        System.out.println(Method_overloading.add(11, 11, 11));
+        System.out.println(Method_overloading.add(99, 69));
+        System.out.println(Method_overloading.add(69, 09, 69));
     }
 }
